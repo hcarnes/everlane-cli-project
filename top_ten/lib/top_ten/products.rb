@@ -1,7 +1,9 @@
 class TopTen::Products
+  attr_accessor :name, :url, :price, :colors, :description,
 
   def self.today
     #should return a bunch of instances of Everlane top sellers
+=begin
     puts <<-DOC
     1. The Day Heel
     2. The Editor Slingback
@@ -14,7 +16,7 @@ class TopTen::Products
     9. The Mid-Rise Skinny Jean
     10. The Editor Heel
     DOC
-
+=end
     product_1 = self.new
     product_1.name = "The Day Heel"
     product_1.url = "https://www.everlane.com/products/womens-day-heel-bluesuede?collection=womens-bestsellersv2"

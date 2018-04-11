@@ -16,16 +16,16 @@ user types top-ten
 Show a list of the top-ten products
 
 Everlane Top 10 Best Sellers:
-  1. Day Market Tote
-  2. Day Heel
-  3. High Rise Skinny Jean
-  4. Modern Loafer
-  5. Tank Bra
-  6. Kick Crop Jean
-  7. Modern Boyfriend Jean
-  8. Wide Leg Crop Pant
-  9. Mid-Rise Skinny Jean
-  10. Cashmere Crew
+  1. The Day Heel
+  2. The Editor Slingback
+  3. The Day Market Tote
+  4. The Japanese Light GoWeave V-Neck Dress
+  5. The Modern Loafer
+  6. The Wide Leg Crop Pant
+  7. The Kick Crop Jean
+  8. The Denim Jacket
+  9. The Mid-Rise Skinny Jean
+  10. The Editor Heel
 
 Which item would you like to know more about?
 
