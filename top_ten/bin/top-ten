@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
 
+require './lib/top_ten'
 
-puts "Welcome to the Everlane CLI!"
+TopTen::CLI.new.call
