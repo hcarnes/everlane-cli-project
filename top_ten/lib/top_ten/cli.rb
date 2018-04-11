@@ -9,8 +9,8 @@ class TopTen::CLI
   def list_products
     puts "Everlane Top 10 Best Sellers:"
     @products = TopTen::Products.today
-    @deals.each.with_index(1) do |deal, i|
-      puts "#{i}. #{deal.name} - #{deal.price}"
+    @products.each.with_index(1) do |products, i|
+      puts "#{i}. #{products.name} - #{products.price}"
     end
   end
 
@@ -21,7 +21,8 @@ class TopTen::CLI
       input = gets.strip.downcase
 
       if input.to_i > 0
-        puts @products[input.to_i - 1]
+        the_product = @products[input.to_i - 1]
+        puts "#{the_product.name} - #{the_product.price}"
       elsif input == "list"
         list_products
       else
