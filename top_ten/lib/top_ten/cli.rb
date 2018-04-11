@@ -8,18 +8,7 @@ class TopTen::CLI
 
   def list_products
     puts "Everlane Top 10 Best Sellers:"
-    puts <<-DOC
-      1. Day Market Tote
-      2. Day Heel
-      3. High Rise Skinny Jean
-      4. Modern Loafer
-      5. Tank Bra
-      6. Kick Crop Jean
-      7. Modern Boyfriend Jean
-      8. Wide Leg Crop Pant
-      9. Mid-Rise Skinny Jean
-      10. Cashmere Crew
-    DOC
+    @products = TopTen::Products.today
   end
 
   def menu
