@@ -9,10 +9,17 @@ class TopTen::Products
   def self.scrape_products
     products = []
 
+    products << self.scrape_first
     #go to Everlane, find the product
     #extract the properties of the product
     #instantiate a product
     #repeat for entire top10 list
     products
   end
+
+  def self.scrape_first
+    doc = Nokogiri::HTML(open("https://www.everlane.com/collections/womens-bestsellersv2"))
+    binding.pry 
+  end
+  
 end
