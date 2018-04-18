@@ -1,3 +1,7 @@
+When Starting, be sure to RUN:
+bundle
+gem install selenium-webdriver
+
 How to Build a CLI Gem
 
   1. Plan your gem, imagine your interface
