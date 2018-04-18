@@ -18,8 +18,12 @@ class TopTen::Products
   end
 
   def self.scrape_first
-    doc = Nokogiri::HTML(open("https://www.everlane.com/collections/womens-bestsellersv2"))
-    binding.pry 
+    options = Selenium::WebDriver::Chrome::Options.new(args: ['headless'])
+    @driver = Selenium::WebDriver.for(:chrome, options: options)
+    @driver.get('https://www.everlane.com/collections/womens-bestsellersv2')
+
+#    doc = Nokogiri::HTML(open("https://www.everlane.com/collections/womens-bestsellersv2"))
+    binding.pry
   end
-  
+
 end
