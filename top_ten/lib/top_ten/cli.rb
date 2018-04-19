@@ -1,5 +1,9 @@
 class TopTen::CLI
 
+  def initialize
+    @scraper = Scraper.new
+  end
+  
   def call
     list_products
     menu
