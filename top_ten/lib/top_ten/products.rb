@@ -1,6 +1,11 @@
 class TopTen::Products
   attr_accessor :name, :url, :price, :colors, :description,
 
+  def initialize
+    options = Selenium::WebDriver::Chrome::Options.new(args: ['headless'])
+    @driver = Selenium::WebDriver.for(:chrome, options: options)
+  end
+
   def self.today
     #scrape Everlane product pages and return product details based on that data
     self.scrape_products
@@ -18,8 +23,8 @@ class TopTen::Products
   end
 
   def self.scrape_first
-    options = Selenium::WebDriver::Chrome::Options.new(args: ['headless'])
-    @driver = Selenium::WebDriver.for(:chrome, options: options)
+#    options = Selenium::WebDriver::Chrome::Options.new(args: ['headless'])
+#    @driver = Selenium::WebDriver.for(:chrome, options: options)
     @driver.get('https://www.everlane.com/collections/womens-bestsellersv2')
 
 #    doc = Nokogiri::HTML(open("https://www.everlane.com/collections/womens-bestsellersv2"))
