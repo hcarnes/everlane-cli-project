@@ -1,4 +1,4 @@
-class TopTen::CLI
+class CLI
 
   def initialize
     @scraper = Scraper.new
@@ -12,7 +12,7 @@ class TopTen::CLI
 
   def list_products
     puts "Everlane Top 10 Best Sellers:"
-    @products = @scraper.scrape_products 
+    @products = @scraper.scrape_products
     @products.each.with_index(1) do |products, i|
       puts "#{i}. #{products.name} - #{products.price}"
     end

@@ -3,6 +3,7 @@ PATH
   specs:
     top_ten (0.1.0)
       nokogiri
+      selenium-webdriver
 
 GEM
   remote: https://rubygems.org/
@@ -46,7 +47,6 @@ DEPENDENCIES
   pry
   rake (~> 10.0)
   rspec
-  selenium-webdriver
   top_ten!
 
 BUNDLED WITH

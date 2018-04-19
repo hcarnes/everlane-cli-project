@@ -1,4 +1,4 @@
-class TopTen::Products
+class Products
   attr_accessor :name, :url, :price, :colors, :description,
 
   def initialize(name, url, price, colors, description)
