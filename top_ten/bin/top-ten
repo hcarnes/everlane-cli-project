@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
-require "top_ten"
+require './bin/setup'
+require './lib/top_ten'
 
-TopTen::CLI.new.call
+CLI.new.call
